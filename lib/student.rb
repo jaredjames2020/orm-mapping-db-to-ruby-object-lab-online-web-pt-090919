@@ -14,7 +14,7 @@ class Student
     # retrieve all the rows from the "Students" database
     # remember each row should be a new instance of the Student class
     sql = <<-SQL
-      SELECT * FROM students
+      SELECT * FROM students WHERE grade = 9
     SQL
     
     DB[:conn].execute(sql)
